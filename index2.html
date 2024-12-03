@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sample Website with Unity WebGL</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #4CAF50;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    section {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .unity-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+      margin: 2rem 0;
+    }
+
+    .unity-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Welcome to My Sample Website</h1>
+  <p>Explore the Unity WebGL Build embedded below.</p>
+</header>
+
+<section>
+  <h2>About This Page</h2>
+  <p>
+    This is a simple example of how to embed Unity WebGL content within a webpage.
+    The Unity content is dynamically sized to fit the screen width while maintaining the correct aspect ratio.
+  </p>
+</section>
+
+<section>
+  <div class="unity-container">
+    <iframe 
+      src="https://younuzbn.github.io/unity360/" 
+      allowfullscreen>
+    </iframe>
+  </div>
+</section>
+
+<section>
+  <h2>More Content</h2>
+  <p>
+    Below the Unity WebGL content, you can continue to add more sections or features.
+    This layout is fully responsive and adjusts to various screen sizes.
+  </p>
+</section>
+
+<footer>
+  <p>&copy; 2024 Muhammed Younus. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
